@@ -62,5 +62,10 @@ module.exports.routes = {
   'POST  /api/v1/entrance/update-password-and-login':    { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
   'POST  /api/v1/observe-my-session':                 { action: 'observe-my-session', hasSocketFeatures: true },
-
+  
+  'GET /company/companies': 'CompanyController.getAllCompany',
+  'GET /company/company/:id': 'CompanyController.getCompanyById',
+  'POST /company/createCompany': 'CompanyController.addCompany',
+  'PUT /company/updateCompany': 'CompanyController.updateCompany',
+  'POST /company/deleteCompany/:id': 'CompanyController.deleteCompany',
 };

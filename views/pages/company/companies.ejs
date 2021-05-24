@@ -1,0 +1,35 @@
+<div id="companies">
+    <h3>Historical Readings</h3>
+  
+    <hr />
+  
+    <div class="row">
+      <div class="col-lg-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Company name</th>
+              <th>Company address</th>
+              <th>Company zip code</th>
+              <th>Company country</th>
+              <th>Soil PH</th>
+              <th>Delete</th>
+              <th>Select</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="company in companies">
+              <td>{{company.nameCompany}}</td>
+              <td>{{company.adresseCompany}}</td>
+              <td>{{company.zipCodeCompany}}</td>
+              <td>{{company.countryCompany}}</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  <%- exposeLocalsToBrowser() %>
